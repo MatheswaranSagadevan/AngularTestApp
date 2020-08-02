@@ -1,0 +1,57 @@
+<blockquote class="blockquote ml-5">
+    <h2>Property Details</h2>
+    <footer class="blockquote-footer">
+        Angular Test Application
+    </footer>
+</blockquote>
+
+<div class="grid-table">
+    <div class="thead">
+        <div class="tr">
+            <div class="td">Address</div>
+            <div class="td">Year Built</div>
+            <div class="td">List Price</div>
+            <div class="td">Monthly Rent</div>
+            <div class="td">Gross Yield</div>
+            <!-- <div class="td">
+                <button class="btn btn-outline-success" (click)="addBankAccountForm()">
+                    <i class="fa fa-plus"></i> New Account
+                </button>
+            </div> -->
+            <div class="td">
+                <span *ngIf="notification" class="elementToFadeInAndOut">
+                    <i class="fas fa-check-circle {{notification.class}}"></i>
+                    {{notification.message}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="tbody">
+         <form class="tr" [formGroup]="fg" *ngFor="let fg of propertyDetailsForms.controls; let i=index;" (submit)="recordSubmit(fg)">
+            <div class="td">
+                <input  class="form-control" formControlName="address"> 
+            </div>
+            <div class="td">
+                <input  class="form-control" formControlName="yearBuilt">
+            </div>
+            <div class="td">
+                <input  class="form-control" formControlName="listPrice">
+            </div>
+            <div class="td">
+                <input  class="form-control" formControlName="monthlyRent">
+            </div>
+            <div class="td">
+                <input  class="form-control" formControlName="grossYield">
+            </div>
+            <div class="td">
+                
+                <button type="submit" class="btn btn-success"><i
+                        class="far fa-save fa-lg">Save</i>
+
+                </button>
+                
+            </div>
+        </form> 
+        
+    </div>
+</div>

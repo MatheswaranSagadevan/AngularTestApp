@@ -1,0 +1,7 @@
+{
+    "/*.json": {
+        "target": "https://samplerspubcontent.blob.core.windows.net/public/properties.json",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
