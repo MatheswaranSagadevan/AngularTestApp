@@ -26,43 +26,7 @@ export class StaticpropertyService {
       
 
       return this.http.get('https://samplerspubcontent.blob.core.windows.net/public/properties.json', {headers});
-      
-    //  .subscribe(
-    //   res => {
-    //     //generate models as per the data received from BankAccont table
-    //       (res['properties'] as []).forEach((data: any) => {
-    //         let property = new Property();
-    //         property.Address = data?.address?.address1;
-    //         property.YearBuild = data?.physical?.yearBuilt;
-    //         property.ListPrice = data?.financial?.listPrice;
-    //         property.MonthlyRent = data?.financial?.monthlyRent;
-    //         property.GrossYield = ((data?.financial?.monthlyRent?? 0) * 12 / (data?.financial?.listPrice ?? 0));
-    //         properties.push(property);
-            
-    //       })
-    //     });
-    // console.log(properties);
-    
-    //  return properties;
+ }
 
-  }
-
-//   private extractData(res: Response) {
-//     let body = res.json();
-//     return body;
-// } 
-
-//   handleError(error) {
-//     let errorMessage = '';
-//     if (error.error instanceof ErrorEvent) {
-//         // client-side error
-//         errorMessage = `Error: ${error.error.message}`;
-//     } else {
-//         // server-side error
-//         errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-//     }
-//     console.log(errorMessage);
-//     return throwError(errorMessage);
-// }
-  }
+}
 

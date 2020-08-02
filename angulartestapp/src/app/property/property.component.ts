@@ -56,19 +56,6 @@ return grossYield.toFixed(2).concat("%");
 
 return (monthlyRent *12 /listPrice).toFixed(2).concat("%");
 }
-//this.propertyList.forEach( (data: Property) => {
-//   this.propertyDetailsForms.push(this.fb.group({
-//               proertyId: [0],
-//               address: ['', Validators.required],
-//               yearBuilt: ['', Validators.required],
-//                listPrice: ['', Validators.min(1)],
-//               //listPrice: [formatCurrency(200,this.locale,getCurrencySymbol('USD', 'wide')), Validators.min(1)],
-//               monthlyRent: ['', Validators.required],
-//               grossYield: ['', Validators.required]
-//             }))
-//           });
- 
-
 
   addPropertyDetailsForm() {
     this.propertyDetailsForms.push(this.fb.group({

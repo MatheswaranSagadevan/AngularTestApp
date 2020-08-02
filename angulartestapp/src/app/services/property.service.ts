@@ -23,15 +23,8 @@ export class PropertyService {
       "MonthlyRent":parseFloat(parseFloat(formData.monthlyRent).toFixed(2)),
       "GrossYield":parseFloat(formData.grossYield)
   }
-//    let property = new Property();
-//    property.Address = formData.address,
-//    property.YearBuild = formData.yearBuilt as number;
-//    property.ListPrice =formData.listPrice as number;
-//    property.MonthlyRent =formData.monthlyRent as number;
-//    property.GrossYield =formData.grossYield as number;
 
- console.log(JSON.stringify(formData));
-// console.log(JSON.stringify(property));
+console.log(JSON.stringify(formData));
 console.log(body);
   
     return this.http.post(environment.apiBaseURI + 'property', body, {headers});
